@@ -6,15 +6,38 @@
 }
 
 .rect{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     width: 5%;
     height: 70%;
     background-color: rgba(0,0,0,0.7);
     border-radius: 60px;
     animation: scale-rect 1s;
-    animation-delay: 0.5s;
+    animation-delay: 0.1s;
     animation-fill-mode: forwards;
 }
 
+app-table-s{
+    animation: hiddens 2s;
+}
+
+@keyframes hiddens {
+    0% {
+        opacity: 0;
+      }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes scale-rect {
     0% {
       border-radius: 10px;

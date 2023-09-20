@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { TableSComponent } from './user-dashboard/table-s/table-s.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     AdminDashboardComponent,
     UserDashboardComponent,
     NavbarComponent,
+    TableSComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

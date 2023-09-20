@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width:160px;
+    height:160px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    margin-right:20px;
+    margin-top: 20px;  
+    .table{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        z-index: 1;
+        width: 70%;
+        height: 70%;
+        border-radius: 30px;
+        background-color: aqua;
+        transform: rotate(45deg);
+    }
+    h1{
+        transform: rotate(-45deg);
+        font-size: 60px;;
+    }
+}
