@@ -1,0 +1,103 @@
+.background,
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 350px;
+  }
+}
+
+@keyframes login {
+  0% {
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 400px;
+    opacity: 1;
+  }
+}
+.background {
+  background-image: url(../../assets/login-background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+.login {
+  gap:50px;
+  opacity: 0;
+  height: 300px;
+  width: 400px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  animation-name: login;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transition: 0.5s;
+}
+.button {
+  opacity: 0;
+  height: 80px;
+  width: 80px;
+  background: white;
+  border-radius: 30px;
+  border: solid 0px;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition: 0.5s;
+  box-shadow:5px 5px 10px black;
+
+}
+.form{
+  border-radius: 50px;
+  position: absolute;
+  opacity: 0;
+  height: 250px;
+  width: 0px;
+  background: white;
+}
+.show{
+  animation-name: open;
+  animation-duration: 1s;
+  transition: 0.5s;
+  animation-fill-mode: forwards;
+}
+.hide{
+  display: none;
+}
+.login:hover{
+  transform: scale(101%);
+  transition: 0.5s;
+
+}
+.button:hover{
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+.button:active{
+  transform: scale(90%);
+  background:gainsboro;
+
+}
