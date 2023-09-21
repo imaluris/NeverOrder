@@ -12,12 +12,10 @@ export class LoginComponent {
 
   }
 
-  login(){
-    document.getElementById("G")?.classList.add("hide");
-    document.getElementById("A")?.classList.add("hide");
-    document.getElementById("F")?.classList.add("show");
-
-  }
+login(){
+  document.getElementById("GUEST")?.classList.add("hide")
+  document.getElementById("ADMIN")!.className="form"
+}
   toDashboard(admin:boolean){
     if(admin){
       this.router.navigate(["admin-dashboard"]);

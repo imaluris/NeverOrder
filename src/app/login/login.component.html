@@ -1,10 +1,10 @@
 <div class="background">
   <div class="login">
-    <form class="form" id="F">
-
+    <form class="form hide" id="F">
+      <input type="text">
+      <input type="password">
     </form>
-    <button style="left: 0px;" class="button animation" id="A" (click)="login()">ADMIN</button>
-    <button style="left: 0px;" class="button animation" id="G" (click)="toDashboard(false)">GUEST</button>
+    <div id="ADMIN" class="button" (click)="login()">ADMIN</div>
+    <div id="GUEST" class="button">GUEST</div>
   </div>
 </div>
-"
