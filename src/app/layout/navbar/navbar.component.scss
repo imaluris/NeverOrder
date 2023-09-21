@@ -6,6 +6,8 @@
     width:100%;
     height: 50px;
     background-color: rgb(180, 143, 172);
+    animation: appear 2s;
+    animation-fill-mode: forwards;
     .icon{
         height: max-content;
         margin-right: 5%;
@@ -18,4 +20,13 @@
         }
     }
     
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

@@ -8,7 +8,7 @@
   background-color: rgb(217, 219, 140);
   border-radius: 30px;
   margin: 20px;
-  //animation: appear 2s;
+  transition: 0.2s;
   .table {
     display: flex;
     align-items: center;
@@ -27,14 +27,43 @@
   }
 }
 
-// @keyframes appear {
-//   0% {
-//     opacity: 0;
-//   }
-//   50% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+.container:hover{
+  transform: scale(1.2);
+  box-shadow: 5px 5px 10px 0.5px rgba(13, 7, 0, 0.7);
+  .table{
+    animation: hovered 1s;
+    animation-fill-mode: forwards;
+  }
+  .table h1{
+    animation: rotate 1s;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+@keyframes hovered {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+@keyframes scaled {
+  0% {
+  }
+
+  100% {
+    box-shadow: 5px 5px 10px 0.5px rgba(13, 7, 0, 0.7);
+  }
+}
